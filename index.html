@@ -5,6 +5,7 @@
   <title>Zielbild 2028</title>
 </head>
 <body>
+
   <h1>   Zielbild 2028</h1>
   <p>    Um das Unternehmen für die Zukunft zu positionieren, haben wir eine Unternehmensstategie bis ins Jashr 2028 entwickelt. Hier zu werden in Verbindung mit exteren Unternehmensberater Daten erhoben, </p>
   <p>    gemeinsam Prozesse entwickelt, Führungskraft geschult und alte Strukturen hinterfragt.</p>
@@ -135,14 +136,55 @@
         left: calc(50% - 10px) !important;
         right: auto !important;
       }
-    }
+     
+      .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 28px;
+  cursor: pointer;
+}
+  }
   </style>
 </head>
 <body>
+    <!-- Popup-Fenster -->
+<div id="news-popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Aktuelle Neuigkeiten</h2>
+    <p>Am 20. April findet das nächste Projekttreffen statt. Weitere Details folgen!</p>
+  </div>
+</div>
+  
   <header>
     <h1>Prozess-Zeitstrahl</h1>
     <p>Ein Überblick über die wichtigsten Meilensteine</p>
   </header>
+  
 
   <div class="timeline">
     <div class="line"></div>
@@ -179,5 +221,14 @@
       </div>
     </div>
   </div>
+  <script>
+  function closePopup() {
+    document.getElementById('news-popup').style.display = 'none';
+  }
+
+  // Optional: automatisch schließen nach 10 Sekunden
+  // setTimeout(closePopup, 10000);
+</script>
+
 </body>
 </html>
