@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Der Lenkungskreis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
 
+    header {
+      background: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    .content {
+      padding: 40px;
+      position: relative;
+    }
+
+    .ecke-rechts-oben {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      max-width: 200px;
+      height: auto;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      border-radius: 6px;
+    }
+
+    .textbereich {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+       .zurueck-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 24px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.2s;
+    }
+
+    .zurueck-button:hover {
+      background-color: #555;
+    }
+ 
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Die Mitarbeiter Befragung</h1>
+  </header>
+
+  <div class="content">
+    <!-- Grafik oben rechts -->
+    <img src="Lenkungskreis.png" alt="Grafik" class="ecke-rechts-oben">
+
+    <div class="textbereich">
+
+  <h2>Willkommen auf Seite rund um die Mitarbeiterbefragung</h2>
+  <p>Was macht eigentlich der Lenkungskreis?</p>
+<p>Der Lenkungskreis besteht aus 14 Kolleginnen und Kollegen aus verschiedenen Bereichen der UKM IM. Gemeinsam arbeiten wir daran, die Weichen für eine erfolgreiche Zukunft zu stellen. Unsere Aufgaben sind vielfältig:
+   <p> •         Zukunftsfähigkeit sicherstellen
+<p>Wir gestalten aktiv die Entwicklung der UKM IM mit.</p>
+ <p>   •         Mitarbeitersicht einbeziehen</p>
+<p>Praxisnahe Lösungen sind nur möglich, wenn die Erfahrungen der Kolleginnen und Kollegen berücksichtigt werden.</p>
+  <p>  •         Zusammenarbeit verbessern</p>
+<P>Wir schaffen Strukturen, die den Austausch und die Zusammenarbeit erleichtern.</p>
+ <p>•         Arbeitsabläufe vereinfachen</p>
+<p>Unser Ziel ist es, Prozesse so einfach und effizient wie möglich zu gestalten.</p>
+<p>    •         Informationen weitergeben</p>
+<p>Über unseren Newsletter informieren wir regelmäßig über aktuelle Entwicklungen.</p>
+ <p>   •         Führungskräfte unterstützen</p>
+<p>Wir bieten Workshops und kollegiale Austauschrunden an.</p>
+  <p>  •         Lösungen erarbeiten</p>
+<p>In Arbeitsgruppen widmen wir uns den Themen, die euch und uns bewegen.</p>
+       </div>
+  </div>
+  <div class="zurueck-button">
+    <!-- Zurück-Button -->
+  <a href="index.html" class="zurueck-button">Zurück zur Hauptseite</a>
+  </div> 
+ </body>
+</html>
