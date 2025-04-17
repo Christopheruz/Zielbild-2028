@@ -34,8 +34,14 @@
       padding: 0 20px;
     }
 
+    .timeline::before,
     .timeline::after {
-      content: '';
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .line {
       position: absolute;
       width: 4px;
       background-color: #333;
@@ -43,6 +49,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 0;
     }
 
     .entry {
@@ -89,6 +96,8 @@
       background-color: white;
       border-radius: 6px;
       display: inline-block;
+      position: relative;
+      z-index: 1;
     }
 
     .button-link {
@@ -127,6 +136,8 @@
   </header>
 
   <div class="timeline">
+    <div class="line"></div>
+
     <div class="entry left">
       <div class="content">
         <h2>
