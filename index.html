@@ -1,28 +1,9 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Zielbild 2028</title>
-</head>
-<body>
-
-  <h1>   Zielbild 2028</h1>
-  <p>    Um das Unternehmen für die Zukunft zu positionieren, haben wir eine Unternehmensstategie bis ins Jashr 2028 entwickelt. Hier zu werden in Verbindung mit exteren Unternehmensberater Daten erhoben, </p>
-  <p>    gemeinsam Prozesse entwickelt, Führungskraft geschult und alte Strukturen hinterfragt.</p>
-  <p>    Die 8 globalen Leitsätze:</p>
-  <p>      1. Wir, in der IM, gehen mit den Gegensätzen Flexibilität und Struktur je nach Anforderung konstruktiv um</p>
-  <P>      2. Unsere Führungskräfte leben eine motivierende, wertschätzende und partnerschaftliche Führung.</P>
-  <p>      3. Alle unsere Abläufe, auch die bereichsübergreifenden sind klar, eindeutig, effizient.</p>
-  <p>      4. Wir engagieren uns als Team mit hoher Kompetenz für unser Zielbild.</p>
-  <p>      5. Alle Mitarbeitenden kennen ihre Verantwortung und nehmen diese im Rahmen ihrer Rolle wahr.</p>
-  <P>      6. Wir gestalten die Zusammenarbeit mit dem UKM klar, verlässlich und abgestimmt.</p>
-  <p>      7. Die UKM-IM ist attraktiv für seine Mitarbeitenden und neue potentielle Kolleg*innen.</p>
-  <P>      8.Die Geschäftsführung arbeitet auf der Grundlage klarer Verantwortungen, partnerschaftlich als Einheit an den Zielen und den Ergebnissen.</p>
-  <html lang="de">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prozess-Zeitstrahl</title>
+  <title>Zielbild 2028</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -122,6 +103,40 @@
       margin-top: 10px;
     }
 
+    .popup {
+      animation: fadeIn 0.3s ease-out;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .popup-content {
+      background-color: #ffe5e5;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 300px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      font-size: 15px;
+      border: 2px solid #444;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
     @media screen and (max-width: 600px) {
       .entry,
       .entry.left,
@@ -136,77 +151,56 @@
         left: calc(50% - 10px) !important;
         right: auto !important;
       }
-     
-      .popup {
-        animation: fadeIn 0.3s ease-out;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.popup-content {
-  background-color: #ffe5e5;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 300px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2);
-  front-size: 15px
-  border: 2px solid #444
-}
-
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  font-size: 24px;
-  cursor: pointer;
-}
-  }
+    }
   </style>
 </head>
 <body>
-    <!-- Popup-Fenster -->
-<div id="news-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <h2>Aktuelle Neuigkeiten</h2>
-    <p>Am 20. April findet das nächste Projekttreffen statt. Weitere Details folgen!</p>
+
+  <!-- Popup-Fenster -->
+  <div id="news-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Aktuelle Neuigkeiten</h2>
+      <p>Am 20. April findet das nächste Projekttreffen statt. Weitere Details folgen!</p>
+    </div>
   </div>
-</div>
-  
+
+  <!-- Hauptüberschrift -->
+  <h1 style="text-align: center;">Zielbild 2028</h1>
+  <div style="max-width: 800px; margin: auto; padding: 20px;">
+    <p>Um das Unternehmen für die Zukunft zu positionieren, haben wir eine Unternehmensstrategie bis ins Jahr 2028 entwickelt. Hierzu wurden in Verbindung mit externen Unternehmensberatern Daten erhoben, gemeinsam Prozesse entwickelt, Führungskräfte geschult und alte Strukturen hinterfragt.</p>
+
+    <p><strong>Die 8 globalen Leitsätze:</strong></p>
+    <p>1. Wir in der IM gehen mit den Gegensätzen Flexibilität und Struktur je nach Anforderung konstruktiv um.</p>
+    <p>2. Unsere Führungskräfte leben eine motivierende, wertschätzende und partnerschaftliche Führung.</p>
+    <p>3. Alle unsere Abläufe, auch die bereichsübergreifenden, sind klar, eindeutig und effizient.</p>
+    <p>4. Wir engagieren uns als Team mit hoher Kompetenz für unser Zielbild.</p>
+    <p>5. Alle Mitarbeitenden kennen ihre Verantwortung und nehmen diese im Rahmen ihrer Rolle wahr.</p>
+    <p>6. Wir gestalten die Zusammenarbeit mit dem UKM klar, verlässlich und abgestimmt.</p>
+    <p>7. Die UKM-IM ist attraktiv für ihre Mitarbeitenden und neue potenzielle Kolleg*innen.</p>
+    <p>8. Die Geschäftsführung arbeitet auf der Grundlage klarer Verantwortungen partnerschaftlich als Einheit an den Zielen und den Ergebnissen.</p>
+  </div>
+
+  <!-- Zeitstrahl -->
   <header>
     <h1>Prozess-Zeitstrahl</h1>
     <p>Ein Überblick über die wichtigsten Meilensteine</p>
   </header>
-  
 
   <div class="timeline">
     <div class="line"></div>
 
     <div class="entry left">
       <div class="content">
-        <h2>
-          <a href="zweite-seite.html" class="button-link">Der Lenkungskreis</a>
-        </h2>
-        <p>Januar 2024: Gründung des Lenkungskreis</p>
+        <h2><a href="zweite-seite.html" class="button-link">Der Lenkungskreis</a></h2>
+        <p>Januar 2024: Gründung des Lenkungskreises</p>
       </div>
     </div>
 
     <div class="entry right">
       <div class="content">
-          <h2>
-          <a href="Delta-Diagnose.html" class="button-link">Die Mitarbeiterbefragung</a>
-        </h2>
-        <p>März 2024: Online-Befragung der Mitarbeiter </p>
+        <h2><a href="Delta-Diagnose.html" class="button-link">Die Mitarbeiterbefragung</a></h2>
+        <p>März 2024: Online-Befragung der Mitarbeitenden</p>
       </div>
     </div>
 
@@ -224,14 +218,16 @@
       </div>
     </div>
   </div>
-  <script>
-  function closePopup() {
-    document.getElementById('news-popup').style.display = 'none';
-  }
 
-  // Optional: automatisch schließen nach 10 Sekunden
-  // setTimeout(closePopup, 10000);
-</script>
+  <!-- Script zum Schließen des Popups -->
+  <script>
+    function closePopup() {
+      document.getElementById('news-popup').style.display = 'none';
+    }
+
+    // Optional: automatisch schließen nach 10 Sekunden
+    // setTimeout(closePopup, 10000);
+  </script>
 
 </body>
 </html>
