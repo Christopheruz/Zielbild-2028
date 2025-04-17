@@ -104,15 +104,14 @@
     }
 
     .popup {
-      display: none;
-      animation: fadeIn 3.0s ease-out;
+      display: none; /* <- Start versteckt */
+      animation: fadeIn 0.3s ease-out;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(0,0,0,0.5);
-      display: flex;
       justify-content: center;
       align-items: center;
       z-index: 999;
@@ -220,16 +219,16 @@
     </div>
   </div>
 
-  <!-- Script zum Schließen des Popups -->
+  <!-- Script zum verzögerten Einblenden & Schließen des Popups -->
   <script>
     function closePopup() {
       document.getElementById('news-popup').style.display = 'none';
-}
+    }
 
-// Popup nach 10 Sekunden anzeigen
-setTimeout(function() {
-  document.getElementById('news-popup').style.display = 'flex';
-}, 5000); // 10000 Millisekunden = 10 Sekunden
+    // Popup erscheint nach 10 Sekunden
+    setTimeout(function () {
+      document.getElementById('news-popup').style.display = 'flex';
+    }, 10000);
   </script>
 
 </body>
