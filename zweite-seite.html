@@ -2,27 +2,61 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Der Lenkungskreis</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background: #f4f4f4;
-      text-align: center;
-      padding: 40px;
     }
-    a {
-      text-decoration: none;
-      color: white;
+
+    header {
       background: #333;
-      padding: 10px 20px;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
+      color: white;
+      padding: 1em;
+      text-align: center;
     }
+
+    .content {
+      padding: 40px;
+      position: relative;
+    }
+
+    .ecke-rechts-oben {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      max-width: 200px;
+      height: auto;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      border-radius: 6px;
+    }
+
+    .textbereich {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
   </style>
 </head>
 <body>
-  <h1>Willkommen auf Seite des Lenkungskreis</h1>
+  <header>
+    <h1>Der Lenkungskreis</h1>
+  </header>
+
+  <div class="content">
+    <!-- Grafik oben rechts -->
+    <img src="Lenkungskreis.png" alt="Grafik" class="ecke-rechts-oben">
+
+    <div class="textbereich">
+
+  <h2>Willkommen auf Seite des Lenkungskreis</h2>
   <p>Was macht eigentlich der Lenkungskreis?
 Der Lenkungskreis besteht aus 14 Kolleginnen und Kollegen aus verschiedenen Bereichen der UKM IM. Gemeinsam arbeiten wir daran, die Weichen für eine erfolgreiche Zukunft zu stellen. Unsere Aufgaben sind vielfältig:
     •         Zukunftsfähigkeit sicherstellen
@@ -42,5 +76,7 @@ In Arbeitsgruppen widmen wir uns den Themen, die euch und uns bewegen.
 </p>
 
   <a href="index.html">Zurück zur Hauptseite</a>
-</body>
+     </div>
+  </div>
+ </body>
 </html>
